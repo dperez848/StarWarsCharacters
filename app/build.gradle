@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.checkapp.test"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // Design
+    implementation "com.android.support:support-v4:${supportVersion}"
+    implementation "com.android.support:appcompat-v7:${supportVersion}"
+    implementation "com.android.support:design:${supportVersion}"
+    implementation "com.android.support:recyclerview-v7:${supportVersion}"
+
+    // Rx
+    implementation "io.reactivex.rxjava2:rxandroid:${rxAndroidVersion}"
+    implementation "io.reactivex.rxjava2:rxjava:${rxJavaVersion}"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitRxAdapterVersion"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    implementation "com.squareup.okhttp3:logging-interceptor:${okHttpLoggingVersion}"
+    implementation "com.squareup.okhttp3:okhttp:${okHttpVersion}"
+
+    // Text commons
+    implementation "org.apache.commons:commons-text:${apacheTextCommonsVersion}"
+
+    // MultiDex
+    implementation "com.android.support:multidex:${multiDexVersion}"
+
+    // ROOM
+    implementation "android.arch.persistence.room:runtime:${roomVersion}"
+    implementation "android.arch.persistence.room:rxjava2:${roomVersion}"
+    annotationProcessor "android.arch.persistence.room:compiler:${roomVersion}"
+
+    // Timber
+    implementation "com.jakewharton.timber:timber:${timberVersion}"
+
+
+}

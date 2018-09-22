@@ -1,0 +1,14 @@
+<resources>
+    <!-- Commons -->
+    <string name="app_name">Star Wars Characters</string>
+    <string name="base_url">https://swapi.co/</string>
+    <string name="common_dismiss">Dismiss</string>
+    <string name="common_no_internet_connection">No internet connection</string>
+    <string name="common_loading">Loading…</string>
+
+    <!-- Home -->
+    <string name="people_empty_message">There are no people in here :(</string>
+    <string name="sort_name">By name</string>
+    <string name="sort_birth">By Birth date</string>
+    <string name="sort_search">Search</string>
+</resources>
