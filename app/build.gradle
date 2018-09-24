@@ -42,9 +42,6 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:${okHttpVersion}"
     implementation "com.squareup.retrofit2:converter-moshi:${moshi_version}"
 
-    // Text commons
-    implementation "org.apache.commons:commons-text:${apacheTextCommonsVersion}"
-
     // MultiDex
     implementation "com.android.support:multidex:${multiDexVersion}"
 
@@ -57,7 +54,7 @@ dependencies {
     // Timber
     implementation "com.jakewharton.timber:timber:${timberVersion}"
 
-    // ----------  Paging
+    // Paging
     implementation "android.arch.paging:runtime:$pagin_version"
 
 }
