@@ -225,8 +225,8 @@ public abstract class BaseMVPActivity extends AppCompatActivity implements
         }
     }
 
-    protected void navigateHorizontalToFragment(Fragment fragment, int containerId, String title,
-                                                String tag) {
+    protected void addFragment(Fragment fragment, int containerId, String title,
+                               String tag) {
         titleStack.add(title);
 
         getSupportFragmentManager()
@@ -237,8 +237,8 @@ public abstract class BaseMVPActivity extends AppCompatActivity implements
         updateTitleFromBackStack();
     }
 
-    protected void navigateHorizontalToFragment(Fragment fragment, int containerId, String title, String subtitle,
-                                                String tag) {
+    protected void addFragmentWithSubtitle(Fragment fragment, int containerId, String title, String subtitle,
+                                           String tag) {
         titleStack.add(title);
         subtitleStack.add(subtitle);
 
@@ -250,8 +250,8 @@ public abstract class BaseMVPActivity extends AppCompatActivity implements
         updateTitleFromBackStack();
     }
 
-    protected void navigateHorizontalReplaceToFragment(Fragment fragment, int containerId, String title,
-                                                       String tag) {
+    protected void replaceFragment(Fragment fragment, int containerId, String title,
+                                   String tag) {
         titleStack.add(title);
 
         getSupportFragmentManager()
@@ -262,8 +262,8 @@ public abstract class BaseMVPActivity extends AppCompatActivity implements
         updateTitleFromBackStack();
     }
 
-    protected void navigateHorizontalReplaceToFragment(Fragment fragment, int containerId, String title,
-                                                       String subtitle, String tag) {
+    protected void replaceFragmentWithSubtitle(Fragment fragment, int containerId, String title,
+                                               String subtitle, String tag) {
         titleStack.add(title);
         subtitleStack.add(subtitle);
 
@@ -275,8 +275,8 @@ public abstract class BaseMVPActivity extends AppCompatActivity implements
         updateTitleFromBackStack();
     }
 
-    protected void navigateDownToFragment(Fragment fragment, int containerId, String title,
-                                          String tag) {
+    protected void addSubLevelFragment(Fragment fragment, int containerId, String title,
+                                       String tag) {
         titleStack.add(title);
 
         getSupportFragmentManager()
@@ -288,8 +288,8 @@ public abstract class BaseMVPActivity extends AppCompatActivity implements
         updateTitleFromBackStack();
     }
 
-    protected void navigateDownToFragment(Fragment fragment, int containerId, String title, String subtitle,
-                                          String tag) {
+    protected void addSubLevelFragmentwithSubtitle(Fragment fragment, int containerId, String title, String subtitle,
+                                       String tag) {
         titleStack.add(title);
         subtitleStack.add(subtitle);
 

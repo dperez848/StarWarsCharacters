@@ -1,14 +1,25 @@
 <resources>
     <!-- Commons -->
-    <string name="app_name">Star Wars Characters</string>
+    <string name="app_name">Star Wars</string>
     <string name="base_url">https://swapi.co/</string>
     <string name="common_dismiss">Dismiss</string>
     <string name="common_no_internet_connection">No internet connection</string>
     <string name="common_loading">Loading…</string>
 
     <!-- Home -->
-    <string name="people_empty_message">There are no people in here :(</string>
-    <string name="sort_name">By name</string>
-    <string name="sort_birth">By Birth date</string>
+    <string name="Character_empty_message">There are no Character in here :(</string>
+    <string name="sort_name">Sort by name</string>
+    <string name="sort_birth">Sort by birth date</string>
     <string name="sort_search">Search</string>
+    <string name="favorite">Show favorites</string>
+    <string name="all">Show all</string>
+    <string name="detail_subtitle_name">Name</string>
+    <string name="detail_subtitle_homeworld">Homeworld</string>
+    <string name="detail_subtitle_films">Films</string>
+    <string name="detail_subtitle_vehicles">Vehicles</string>
+    <string name="detail_subtitle_birth">Born on</string>
+    <string name="detail_title">Detail</string>
+
+    <string name="character_empty_film">Doesn\'t appear in any film</string>
+    <string name="character_empty_vehicles">Doesn\'t have any vehicle</string>
 </resources>

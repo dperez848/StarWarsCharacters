@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_sm"
+            android:paddingLeft="@dimen/spacing_sm"
+            android:paddingRight="@dimen/spacing_sm">
+
+            <TextView
+                style="@style/DetailSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_subtitle_name" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/DetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/DetailSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_subtitle_birth" />
+
+            <TextView
+                android:id="@+id/birth"
+                style="@style/DetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/DetailSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_subtitle_homeworld" />
+
+            <TextView
+                android:id="@+id/homeworld"
+                style="@style/DetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/DetailSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_subtitle_films" />
+
+            <TextView
+                android:id="@+id/films"
+                style="@style/DetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/app_name" />
+
+            <TextView
+                style="@style/DetailSubtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/detail_subtitle_vehicles" />
+
+            <TextView
+                android:id="@+id/vehicles"
+                style="@style/DetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/app_name" />
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

@@ -42,7 +42,7 @@
                     android:id="@+id/date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/ic_action_calendar_today"
+                    android:drawableLeft="@drawable/ic_date"
                     android:drawablePadding="@dimen/text_sm"
                     android:maxLines="1"
                     android:paddingLeft="@dimen/spacing_sm"
@@ -57,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/text_xs"
                     android:layout_marginTop="@dimen/text_xs"
-                    android:drawableLeft="@drawable/ic_action_home"
+                    android:drawableLeft="@drawable/ic_public"
                     android:drawablePadding="@dimen/text_sm"
                     android:maxLines="1"
                     android:paddingLeft="@dimen/spacing_sm"
@@ -72,10 +72,10 @@
                 android:id="@+id/favorite"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:adjustViewBounds="true"
                 android:layout_gravity="center"
+                android:adjustViewBounds="true"
                 android:scaleType="center"
-                android:src="@drawable/ic_action_favorite_border" />
+                android:src="@drawable/ic_favorite_off" />
         </LinearLayout>
 
         <View

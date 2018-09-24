@@ -36,6 +36,9 @@ ext {
     apacheTextCommonsVersion = "1.4"
     roomVersion = "1.1.1"
     timberVersion = "4.6.0"
+    pagin_version = '1.0.1'
+    moshi_version = '2.3.0'
+
 }
 
 

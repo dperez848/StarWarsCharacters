@@ -37,10 +37,10 @@ dependencies {
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:${retrofitVersion}"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitRxAdapterVersion"
-    implementation "com.squareup.retrofit2:converter-gson:${retrofitVersion}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:${retrofitRxAdapterVersion}"
     implementation "com.squareup.okhttp3:logging-interceptor:${okHttpLoggingVersion}"
     implementation "com.squareup.okhttp3:okhttp:${okHttpVersion}"
+    implementation "com.squareup.retrofit2:converter-moshi:${moshi_version}"
 
     // Text commons
     implementation "org.apache.commons:commons-text:${apacheTextCommonsVersion}"
@@ -51,10 +51,13 @@ dependencies {
     // ROOM
     implementation "android.arch.persistence.room:runtime:${roomVersion}"
     implementation "android.arch.persistence.room:rxjava2:${roomVersion}"
+    implementation 'com.android.support:support-v4:27.1.1'
     annotationProcessor "android.arch.persistence.room:compiler:${roomVersion}"
 
     // Timber
     implementation "com.jakewharton.timber:timber:${timberVersion}"
 
+    // ----------  Paging
+    implementation "android.arch.paging:runtime:$pagin_version"
 
 }

@@ -1,14 +1,10 @@
 package com.checkapp.test.utils;
 
-import com.google.gson.Gson;
 
 import java.util.List;
 
 public class StringUtils {
 
-    public static String toString(Object object) {
-        return new Gson().toJson(object);
-    }
 
     public static boolean isEmpty(String text) {
         return text == null || text.length() == 0;
